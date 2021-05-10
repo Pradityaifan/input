@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section id="main">
+     <header class="header">
+         <h1 id="title">Please Chose Your Favorite Player</h1>
+         <p id="description">Thank You for taking time to vote your favorite player</p>
+    </header>
+
+    <form action="" id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Nama</label>
+            <input type="text" id="name" name="name" placeholder=" Name" required> 
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder=" Email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="age" id="number-label">Age</label>
+            <input type="number" id="number" name="age" min="15" max="50" placeholder=" Age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="position">Posisi Favorit Kamu</label>
+            <select name="position" id="dropdown">
+                <option disabled selected value>Posisi Kesukaan Kamu Dalam Bermain Sepak Bola </option>
+                <option value="goalkeeper">Kiper</option>
+                <option value="bertahan">Pemain Bertahan</option>
+                <option value="tengah">Pemain Tengah</option>
+                <option value="penyerang">Penyerang</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Siapa Penyerang Manchester City Favorit Kamu</p>
+            <label>
+                <input type="radio"  value="aguero" class="input-radio" name="rekomen" checked> Aguero
+            </label>
+            <label>
+                <input type="radio"  value="foden" class="input-radio" name="rekomen"> Foden
+            </label>
+            <label>
+                <input type="radio"  value="sterling" class="input-radio" name="rekomen"> Sterling
+            </label>
+            <label>
+                <input type="radio"  value="mahrez" class="input-radio" name="rekomen"> Mahrez
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Gelar Yang Bisa didapatkan Manchester City Pada Musim Ini menurut Kamu
+                <span class="suges">(Centang Semua Jika Yakin)</span>
+            </p>
+            <label>
+                <input type="checkbox"  value="Premier" class="input-checkbox" name="prefer"> Premier League
+            </label>
+            <label>
+                <input type="checkbox"  value="fa" class="input-checkbox" name="prefer"> FA Cup
+            </label>
+            <label>
+                <input type="checkbox"  value="EFL" class="input-checkbox" name="prefer"> EFL Cup
+            </label>
+            <label>
+                <input type="checkbox"  value="Champions" class="input-checkbox" name="prefer"> Champions League
+            </label>
+            <label>
+                <input type="checkbox"  value="Super" class="input-checkbox" name="prefer"> Super Cup
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Kritik Dan Saran Untuk Vote Pemain Lainnya</p>
+            <textarea name="kritik" id="kritik" placeholder="Masukkan Saran Anda Untuk Vote Berikutnya"></textarea>
+        </div>
+
+
+        <div class="form group">    
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+ </section>   
+</body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
